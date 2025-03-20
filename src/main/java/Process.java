@@ -8,6 +8,13 @@ public class Process {
   private int priority;
   private int remainingTime;
 
+  /**
+   * Create a new process with the given process ID, arrival time, and burst time.
+   *
+   * @param pid         the process ID
+   * @param arrivalTime the arrival time
+   * @param burstTime   the burst time
+   */
   public Process(int pid, int arrivalTime, int burstTime) {
     this.pid = pid;
     this.arrivalTime = arrivalTime;
@@ -15,6 +22,14 @@ public class Process {
     this.remainingTime = burstTime;
   }
 
+  /**
+   * Create a new process with the given process ID, arrival time, burst time, and priority.
+   *
+   * @param pid         the process ID
+   * @param arrivalTime the arrival time
+   * @param burstTime   the burst time
+   * @param priority    the priority
+   */
   public Process(int pid, int arrivalTime, int burstTime, int priority) {
     this.pid = pid;
     this.arrivalTime = arrivalTime;
